@@ -53,6 +53,88 @@ a {
 h1, h2, h3 {
     font-family: "Instrument Serif";
 }
+
+
+
+.topp h2 {
+    font-weight: 300;
+    transform: skew(-15deg, 0.98turn);
+    margin-top: 0;
+    letter-spacing: 0.0125rem;
+}
+
+.techno {
+    font-family: "Orbitron";
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: -0.25rem;
+    -webkit-text-stroke: 1px var(--bakgrunn);
+    transform: skew(-15deg, 0.98turn);
+    border: 2px solid greenyellow;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem 1rem 2rem;
+    display: flex;
+    width: fit-content;
+    align-self: center;
+}
+
+.techno:hover {
+    text-shadow: 0.125rem 0.25rem greenyellow;
+
+}
+
+.film {
+aspect-ratio: 4 / 3;
+padding: 2rem;
+}
+
+.boks {
+    margin: 1rem; 
+    padding: 1rem; 
+    border: 1px solid var(--main);
+    border-radius: 1rem;
+}
+
+
+@keyframes sparkle {
+    0% {
+      color: var(--main);
+      text-shadow: none;
+    }
+    50% {
+      color: greenyellow;
+      text-shadow: 0 0 5px greenyellow, 0 0 8px greenyellow, 0 0 10px greenyellow, 0 0 8px greenyellow, 0 0 5px greenyellow;
+    }
+    100% {
+      color: var(--main);
+      text-shadow: none;
+    }
+  }
+  
+  .stjernetekst {
+    animation: sparkle 3s infinite;
+  }
+  
+  .lyrics {
+    text-align: left;
+    margin: 1rem 0;
+    padding: 2rem;
+  }
+  
+  .lyrics .overline {
+    font-weight: 700;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0.125rem;
+    color: var(--tekno);
+    margin-bottom: 0;
+  }
+
+  .lyrics p:not(.overline) {
+    margin-top: 0.5rem;
+    line-height: 1.6rem;
+  }
 </style>
 <body>
 <section class="topp" style="width: 100%; align-items: center; flex-direction: column; display: flex;">
