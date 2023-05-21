@@ -47,6 +47,11 @@ h1, h2, h3 {
   font-family: "Instrument Serif";
 }
 
+li {
+  margin-bottom: 0.5rem;
+  
+}
+
 .topp h2 {
     font-weight: 300;
     transform: skew(-15deg, 0.98turn);
