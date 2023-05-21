@@ -18,14 +18,15 @@
   --main: aliceblue;
   --tekno: greenyellow;
   --maks-bredde: 40rem;
+  background: linear-gradient(180deg, var(--bakgrunn) 0%, #20392a 100%);
+
 }
 
 
 html {
   font-family: "Instrument";
-  font-size: 20px;
+  font-size: 18px;
   color: var(--main);
-  background: linear-gradient(180deg, var(--bakgrunn) 0%, #20392a 100%);
   text-align: center;
 }
 
