@@ -1,4 +1,50 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("fonter/Orbitron/Orbitron-VariableFont_wght.ttf")
+}
 
+@font-face {
+  font-family: "Instrument";
+  src: url("fonter/Instrument_Sans/InstrumentSans-VariableFont_wdth\,wght.ttf")
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("fonter/Instrument_Serif/InstrumentSerif-Regular.ttf")
+}
+
+:root {
+  --bakgrunn: #142019;
+  --main: aliceblue;
+  --tekno: greenyellow;
+  --maks-bredde: 40rem;
+}
+
+
+html {
+  font-family: "Instrument";
+  font-size: 20px;
+  color: var(--main);
+  background: linear-gradient(180deg, var(--bakgrunn) 0%, #20392a 100%);
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+
+}
+
+a {
+  color: var(--tekno);
+}
+
+h1, h2, h3 {
+  font-family: "Instrument Serif";
+}
 
 .topp h2 {
     font-weight: 300;
@@ -80,3 +126,49 @@ padding: 2rem;
     line-height: 1.6rem;
     font-variation-settings: "wght" 300,
   }
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--tekno); /* If you want dots under the hoverable text */
+
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: var(--tekno);
+  color: var(--bakgrunn);
+  text-align: center;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+
+  text-transform: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.0125rem;
+  font-weight: 400;
+  font-style: normal;
+  
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  width: 180px;
+  bottom: 140%;
+  left: 50%;
+  margin-left: -90px;
+
+  transition: ease-in-out 200ms;
+  opacity: 0;
+
+  
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transform: skew(-5deg, 0.01turn);
+
+}
